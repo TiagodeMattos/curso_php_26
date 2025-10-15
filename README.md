@@ -1,4 +1,5 @@
-# Tutorial
+# Tutori
+l
 - Abrir vscode ver se ta logado ubunto (canto inferior 
 esquerdo), depois file open folder: seleciona tudo e apaga.
 
