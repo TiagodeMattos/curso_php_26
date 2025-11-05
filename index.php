@@ -110,6 +110,30 @@ if ( $operador == "+" ){
     echo " A divisão dos valores é de: $resultado";
 }
 
+$Vartempo = $valor1;
+    $valor1 = $valor2;
+    $valor2 = $Vartempo;
+
+switch($operador) {
+    case "+":
+          $resultado = $valor1 + $valor2;
+           echo " A soma dos valores é de: $resultado";
+           break;
+    case "-":
+         $resultado = $valor1 - $valor2;
+         echo " A subtração dos valores é de: $resultado";
+    case "*":
+         $resultado = $valor1 * $valor2;
+         echo " A multiplicação dos valores é de: $resultado";
+    case "/":
+          $resultado = $valor1 / $valor2;
+          echo " A divisão dos valores é de: $resultado";
+         break;
+    default:
+         echo "O operador informado é invalido!";
+         break;
+}
+
 //fazer exercicio 8 da pagina 15 da apostila.
 /* NÃO UTILIZAR ARRAY
 UTILIZAR OS EXERCICIOS DE MÉDIAS E APLICAR
