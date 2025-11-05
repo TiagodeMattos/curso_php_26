@@ -166,6 +166,6 @@ if ($resultadoo >= 6){
  if ($idade <= 18 ){
 echo "$nome você é jovem demais para entrar!";
 
- } else {
-    echo "$NOME tá podendo passar!";
+} else {
+    echo "$nome tá podendo passar!";
  }
