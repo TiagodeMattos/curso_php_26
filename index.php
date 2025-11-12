@@ -41,6 +41,23 @@ $restoDivisao = $valor1 % $valor2;
 echo "subtracao é: " . $restoDivisao;
 echo "<br>";
 
+//tabuada do 5 
+
+echo "<h1> Tabuada do 5</h1>";
+
+$numero = 5;
+echo "1 x $numero = " . $numero * 1 . "<br>";
+echo "2 x $numero = " . $numero * 2 . "<br>";
+echo "3 x $numero = " . $numero * 3 . "<br>";
+echo "4 x $numero = " . $numero * 4 . "<br>";
+echo "5 x $numero = " . $numero * 5 . "<br>";
+echo "6 x $numero = " . $numero * 6 . "<br>";
+echo "7 x $numero = " . $numero * 7 . "<br>";
+echo "8 x $numero = " . $numero * 8 . "<br>";
+echo "9 x $numero = " . $numero * 9 . "<br>";
+echo "10 x $numero = " . $numero * 10 . "<br>"; 
+
+
 // Converter graus Fahrenheite para Celcius. 95F -> ?F (35) 
 
 $fahrenheite = 95;
@@ -193,3 +210,73 @@ echo "$nome você é jovem demais para entrar!";
 } else {
     echo "$nome tá podendo passar!";
  }
+
+ //exerciciop 5 pag 15
+
+$num =2;
+$restoDivisao = $num % 2;
+if($restoDivisao == 0){
+    echo "O $num é par";
+} else {
+    echo "O $num é limpar";
+}
+
+echo "<h1> Tabuada do 5 mais elaborada</h1>";
+
+$contar = 0;
+
+// $contar = $contar +1; || $contar += 1; || $contar++;
+for ($contar = 0; $contar <= 10; $contar++) {
+
+    if ($contar == 5) {
+        continue;
+    }
+
+   $restoDivisao = $contar % 2;
+   $ehDivisaoExata = $restoDivisao == 0;
+
+   if($ehDivisaoExata) {
+    echo "$contar é par";
+   }else{
+    echo "O $contar é impar";
+   }
+
+   //  if ($contar == 5) {
+   //     break;
+   //  }
+} //TERMINA O FOR AQUI
+
+echo "<br>";
+echo "Pq q nn existe for preta? -Bill do Bora Bill";
+
+//Contar e Exibir os numeros pares de 1 até 50;
+
+//Exibir os numeros em ordem DECRESCENTE (Maior para Menos - DESC) de 10 - 0.
+
+// Calcular o fatorial de um numero. Ex.: calcular o fatorial de 5
+
+echo "<h1>  Números pares 1 - 50 </h1>";
+
+for ($Sopares = 0; $Sopares <= 50; $Sopares = $Sopares +2){
+    echo "<br>";
+    echo "Apenas números pares: $Sopares";
+}
+
+echo "<h1> Exibir em ordem decrescente </h1>";
+
+for ($Sopares = 50; $Sopares >= 0; $Sopares = $Sopares -2){
+    echo "<br>";
+    echo "Apenas números pares: $Sopares";
+}
+
+echo "<h1> Fatorial do número 5 </h1>"; 
+
+// 5 ? 5 x4...
+$numero = 5;
+$antecessor = $numero - 1;
+
+for ($Fatorial = $antecessor; $Fatorial >= 1; $Fatorial = $Fatorial -1) {
+    $numero *= $Fatorial;
+}
+
+echo "O fatorial de 5: $numero";
