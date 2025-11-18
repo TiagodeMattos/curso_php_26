@@ -280,3 +280,36 @@ for ($Fatorial = $antecessor; $Fatorial >= 1; $Fatorial = $Fatorial -1) {
 }
 
 echo "O fatorial de 5: $numero";
+
+echo "<h1>Números pares 1 - 50</h1>";
+
+$numero = 0;
+
+echo "<h1> Tema de casa </h1>";
+
+while ($numero <= 50) {
+    echo "<br>Apenas números pares: $numero";
+    $numero = $numero + 2; // soma de 2 em 2
+}
+
+echo "<h1>Exibir em ordem decrescente</h1>";
+
+$numero = 50;
+
+while ($numero >= 0) {
+    echo "<br>Apenas números pares: $numero";
+    $numero = $numero - 2; // diminui de 2 em 2
+}
+
+echo "<h1>Fatorial do número 5</h1>";
+
+$numero = 5;
+$fatorial = 1;
+$contador = $numero;
+
+while ($contador >= 1) {
+    $fatorial = $fatorial * $contador; // multiplica tudo
+    $contador = $contador - 1;         // vai diminuindo
+}
+
+echo "O fatorial de 5 é: $fatorial";
