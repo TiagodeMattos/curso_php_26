@@ -313,3 +313,32 @@ while ($contador >= 1) {
 }
 
 echo "O fatorial de 5 é: $fatorial";
+
+// encontrar os 5 primeiros numeros primos 3, 5, 7, 11, 13.
+
+$contPrimos = 0;
+$numeroAvaliado = 3; 
+
+for ($numeroAvaliado = 3; $contPrimos  <= 5; $numeroAvaliado ++) {
+
+    $antecessor = $numeroAvaliado -1;
+    $ehPrimo = true;
+
+    for($divisor = 2; $divisor<= $antecessor; $divisor++ ) {
+
+        $ehDivisaoExata = $restoDivisao == 0;
+        if ($ehDivisoExata) {
+
+            $ehPrimo = false;
+            break; 
+        }
+    }
+
+    if($ehPrimo == true){
+        echo "O número  $numeroAvaliado é PRIMO!<br>";
+        $contPrimos++;
+    }
+
+
+}
+
