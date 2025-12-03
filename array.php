@@ -109,7 +109,7 @@ $arrayFim = [10, 90, 30];
 
 
 for($i = 0; $i < 3; $i++){
- $arraySoma[$i] = $arrrayInicio[$i] + $arrayFim[$i];
+ $arraySoma[$i] = $arrayInicio[$i] + $arrayFim[$i];
 } 
 
 
