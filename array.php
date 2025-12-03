@@ -92,5 +92,24 @@ for($i = 0; $i < 5; $i++) {
     
     echo $salvarPrimos[$i] . "<br>";
 
-}
+} 
+
+/** 
+ * Somar arrays;
+ * $arrrayInicio = [5, 10, 50];*
+ * $arrayFim = [10, 90, 30];
+ * Resultado esperado:
+ * $arraySoma[15, 100, 80];
+ * $arrayMultiplicado[50, 1000, 24]
+ */ 
+
+$arraySoma = [];
+$arrayInicio = [5, 10, 50];
+$arrayFim = [10, 90, 30];
+
+
+for($i = 0; $i < 3; $i++){
+ $arraySoma[$i] = $arrrayInicio[$i] + $arrayFim[$i];
+} 
+
 
