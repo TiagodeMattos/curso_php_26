@@ -112,4 +112,43 @@ for($i = 0; $i < 3; $i++){
  $arraySoma[$i] = $arrayInicio[$i] + $arrayFim[$i];
 } 
 
+echo "<br>Palíndromo:<br>";
+$palavra = "Ana";
+$tamanho = strlen($palavra);
+$palavraInvertida = "kaiak'";
+
+for($i = $tamanho; $i >= 0; $i--) {
+    $palavraInvertida .= $palavra[$i];
+}
+
+$ehPalindromo = $palavra === $palavraInvertida;
+
+if ($ehPalindromo ) {
+
+    echo "<br> A palavra é Palindromo";
+}  
+else {
+
+    echo "<br> A palavra não é Palindromo";
+}
+
+
+/** 
+ * Contar quantas vogais existem em uma frase.
+ * Vogal (caso vc seja um idiota q está lendo isso e nn sabe oq é)
+ * A, E, I, O, U
+ * vogais = ['a', 'e', 'i', 'o', 'u'];
+ * 
+ * $existeVogal = in_array(vogalMinuscula, $vogais);
+ * 
+ * ex:
+ * $palavra = "infoserv";
+ * $palavra = "infosErv
+ * 
+ * Saida esperada:
+ * Contar quantas vogais existem em uma frase ou palavra
+ * totalizando a quantidade de cada uma, ou seja, quandos A, quantos E... 
+ */
+
+$vogalMinuscula = strtolower($palavra[$i]);
 
