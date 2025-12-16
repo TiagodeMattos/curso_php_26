@@ -152,3 +152,24 @@ else {
 
 $vogalMinuscula = strtolower($palavra[$i]);
 
+$palavra = "infoserv";
+$vogais = ['a', 'e', 'i', 'o', 'u'];
+$contador = 0;
+
+for ($i = 0; $i < strlen($palavra); $i++) {
+
+    $letra = strtolower($palavra[$i]);
+
+    if (
+        $letra == 'a' ||
+        $letra == 'e' ||
+        $letra == 'i' ||
+        $letra == 'o' ||
+        $letra == 'u'
+    ) {
+        $contador++;
+    }
+}
+
+echo "Quantidade de vogais: " . $contador;
+
