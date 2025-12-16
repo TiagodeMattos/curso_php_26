@@ -161,10 +161,10 @@ for ($i = 0; $i < strlen($palavra); $i++) {
     $letra = strtolower($palavra[$i]);
 
     if (
-        $letra == 'a' ||
-        $letra == 'e' ||
-        $letra == 'i' ||
-        $letra == 'o' ||
+        $letra == 'a' 
+        $letra == 'e' 
+        $letra == 'i' 
+        $letra == 'o' 
         $letra == 'u'
     ) {
         $contador++;
