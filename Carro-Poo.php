@@ -65,3 +65,44 @@ $chave = "presencial";
 $objCarro->ligar($chave);
 $objCarro->ligar($chave);
 
+class Cachorro {
+    public $raça;
+    public $pelagem; 
+    public $peso;
+    public $cheiro; 
+
+}
+
+class Gato { 
+    public $raça;
+    public $pelagem; 
+    public $peso;
+    public $cheiro; 
+
+}
+
+class Papagaio {
+    public $raça;
+    public $penas; 
+    public $peso;
+    public $cor; 
+
+}
+
+class Sala {
+   public $mesas;
+   public $cadeiras;
+   public $quadro;
+   public $janelas; 
+   public $porta;
+
+}
+
+$objSala = new Sala();
+$objSala->setMarca("Hyundai");
+$objSala->modelo = "I30";
+$objSala->ano = "2015";
+$objSala->cor = "vermelho";
+$objSala->combustivel = "gasolina"
+
+
