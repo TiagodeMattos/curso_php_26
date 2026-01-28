@@ -9,3 +9,7 @@ tudo e apaga.
 
 - /var/www/html/curso_php_26 e da um ok. Após, terminal novo terminal 
 verificar se esta em: /var/www/html/curso_php_26.
+
+
+
+GRANT ALL PRIVILEGES ON *.* TO 'aluno'@localhost IDENTIFIED BY '1234';

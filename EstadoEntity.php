@@ -4,7 +4,7 @@
 
 class EstadoEntity extends EntityAbstract {
    public $cidade;
-   public $sigav;
+   public $sigla;
     
     public function __construct()
     {
