@@ -11,11 +11,14 @@ abstract class PessoaAbstract {
     public $complemento;
     public $ponto
 
+}
+
     public function resetarPessoa() {       
     $this->$nome = "";
     $this->$idade = "";
     $this->$logradouro = ""; 
     $this-> $cep = "";
+    $this-> $bairro = "";
     $this->$cidade = "";
     $this->$estado = "";
     $this->$numero = "";
@@ -31,5 +34,5 @@ abstract class PessoaAbstract {
 
        echo "123.456.789/0001-11";
     } 
-}
+
 

@@ -103,6 +103,95 @@ INSERT INTO `estado` VALUES (1,NULL,NULL,NULL,NULL,NULL),(2,NULL,NULL,NULL,NULL,
 UNLOCK TABLES;
 
 --
+-- Table structure for table `pessoa_fisica`
+--
+
+DROP TABLE IF EXISTS `pessoa_fisica`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `pessoa_fisica` (
+  `id` smallint(6) NOT NULL AUTO_INCREMENT,
+  `criado_em` timestamp NULL DEFAULT NULL,
+  `atualizado_em` timestamp NULL DEFAULT NULL,
+  `usuario_alteracao` smallint(6) DEFAULT NULL,
+  `cpf` varchar(14) NOT NULL,
+  `data_nascimento` date NOT NULL,
+  `nome_mae` varchar(255) NOT NULL,
+  `rg` varchar(10) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `pessoa_fisica`
+--
+
+LOCK TABLES `pessoa_fisica` WRITE;
+/*!40000 ALTER TABLE `pessoa_fisica` DISABLE KEYS */;
+/*!40000 ALTER TABLE `pessoa_fisica` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `pessoa_juridica`
+--
+
+DROP TABLE IF EXISTS `pessoa_juridica`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `pessoa_juridica` (
+  `id` smallint(6) NOT NULL AUTO_INCREMENT,
+  `criado_em` timestamp NULL DEFAULT NULL,
+  `atualizado_em` timestamp NULL DEFAULT NULL,
+  `usuario_alteracao` smallint(6) DEFAULT NULL,
+  `razao_social` varchar(512) NOT NULL,
+  `cnpj` varchar(18) NOT NULL,
+  `cnae` varchar(100) NOT NULL,
+  `inscricao_estadual` varchar(18) NOT NULL,
+  `porte` varchar(100) NOT NULL,
+  `matriz` tinyint(1) NOT NULL,
+  `genero` varchar(1) NOT NULL DEFAULT 'M',
+  `data_fundacao` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `pessoa_juridica`
+--
+
+LOCK TABLES `pessoa_juridica` WRITE;
+/*!40000 ALTER TABLE `pessoa_juridica` DISABLE KEYS */;
+/*!40000 ALTER TABLE `pessoa_juridica` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `usuario`
+--
+
+DROP TABLE IF EXISTS `usuario`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `usuario` (
+  `id` smallint(6) NOT NULL AUTO_INCREMENT,
+  `criado_em` timestamp NULL DEFAULT NULL,
+  `atualizado_em` timestamp NULL DEFAULT NULL,
+  `usuario_alteracao` smallint(6) DEFAULT NULL,
+  `nome` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `usuario`
+--
+
+LOCK TABLES `usuario` WRITE;
+/*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
+INSERT INTO `usuario` VALUES (3,NULL,NULL,NULL,'Tiago');
+/*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Dumping routines for database 'curso_php_26'
 --
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -115,4 +204,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-27 21:45:02
+-- Dump completed on 2026-02-03 21:36:29
